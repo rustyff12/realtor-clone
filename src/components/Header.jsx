@@ -2,15 +2,13 @@ import { useLocation, useNavigate } from "react-router-dom";
 export default function Header() {
   const location = useLocation();
   const navigate = useNavigate();
-  
+
   function pathMatchRoute(route) {
     return route === location.pathname;
   }
 
-  
-
   return (
-    <div className="bg-white border-b shadow-sm sticky top-0 z-index-50">
+    <div className="bg-white border-b-gray-500 shadow-sm sticky top-0 z-index-50">
       <header className="flex justify-between items-center px-3 max-w-6xl mx-auto">
         <div>
           <img
